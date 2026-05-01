@@ -1,136 +1,523 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Echiviro – Deine klingenden Erinnerungen</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echiviro - Deine Erinnerungen haben eine Stimme</title>
+    <meta name="description" content="Echiviro verbindet emotionale Fotos mit deiner Stimme. Offline, privat und direkt in der Bilddatei gespeichert.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <div class="page-shell">
+        <header class="hero" id="top">
+            <nav class="nav container">
+                <a class="brand" href="#top">
+                    <span class="brand-mark"></span>
+                    <span>Echiviro</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#pricing">Preise</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <a class="button button-secondary" href="#pricing">Free oder Pro wählen</a>
+            </nav>
 
-<header class="hero">
-  <nav class="nav container">
-    <div class="brand">
-      <div class="brand-mark"></div>
-      Echiviro
+            <div class="hero-aurora aurora-left"></div>
+            <div class="hero-aurora aurora-right"></div>
+
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Emotionale Erinnerungen in Fotos mit Stimme</p>
+                    <h1>Deine Erinnerungen haben eine Stimme.</h1>
+                    <p class="hero-text">
+                        Halte nicht nur fest, was du gesehen hast - sondern wie es sich angefühlt hat.
+                        Echiviro verbindet deine Fotos mit der Kraft deiner Stimme, damit aus einem schönen Bild
+                        wieder ein lebendiger Moment wird.
+                    </p>
+                    <p class="platform-note">Aktuell nur für Android entwickelt.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#pricing">Mit Free starten</a>
+                        <a class="button button-ghost" href="#roadmap">Roadmap ansehen</a>
+                    </div>
+                    <p class="hero-note">
+                        Echiviro ist mehr als eine Kamera-App - es ist ein digitales Archiv für die Seele.
+                    </p>
+                    <ul class="hero-points">
+                        <li>Aktuell exklusiv für Android</li>
+                        <li>100% local-first</li>
+                        <li>Stimme und Bild bleiben zusammen</li>
+                        <li>Kein Abo-Zwang</li>
+                        <li>Erinnerungen, die man hören kann</li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual" aria-label="Echiviro App Mockup">
+                    <div class="glow-ring"></div>
+                    <div class="phone-frame">
+                        <div class="phone-top"></div>
+                        <div class="phone-screen">
+                            <div class="screen-photo">
+                                <div class="screen-slideshow" aria-label="Echiviro Render Slideshow">
+                                    <img class="screen-slide is-active" src="Render_Onpager1.jpg" alt="Echiviro App Render 1">
+                                    <img class="screen-slide" src="Render_Onpager2.jpg" alt="Echiviro App Render 2">
+                                    <img class="screen-slide" src="Render_Onpager3.jpg" alt="Echiviro App Render 3">
+                                </div>
+                            </div>
+                            <div class="screen-meta">
+                                <div>
+                                    <p class="meta-label">In App Rendering</p>
+                                    <h2>Ein Moment. Eine Datei.</h2>
+                                </div>
+                                <div class="meta-chip">Privat im Moment bewahrt</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section value-section">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">Warum Echiviro?</p>
+                        <h2>Fotos allein sind stumm. Messenger-Sprachnotizen sind isoliert.</h2>
+                        <p>
+                            Echiviro verschmilzt beides zu einer untrennbaren Einheit. So bleiben nicht nur Motive,
+                            sondern Stimmungen, Stimmen und kleine Gänsehaut-Momente erhalten.
+                        </p>
+                    </div>
+
+                    <div class="value-grid">
+                        <article class="info-panel">
+                            <h3>Der Unterschied</h3>
+                            <p>
+                                Statt Bilder und Audios getrennt zu verwalten, speichert Echiviro deine Stimme direkt
+                                in der Bilddatei. Ein Foto, ein Gefühl, eine Erinnerung - untrennbar miteinander
+                                verbunden.
+                            </p>
+                        </article>
+                        <article class="info-panel">
+                            <h3>Konkreter Nutzen</h3>
+                            <p>
+                                Jahre später wieder das Lachen hören, das Meeresrauschen spüren oder die Stimme deiner
+                                Kinder erleben - genau zu dem Bild, das diesen Moment trägt. Nicht nur sehen, was war,
+                                sondern wieder fühlen, warum es wichtig war.
+                            </p>
+                        </article>
+                        <article class="info-panel highlight-panel">
+                            <h3>Ehrlich privat</h3>
+                            <p>
+                                Keine Cloud, kein Abo-Zwang, keine Datensammlung. Deine Momente gehören dir - für immer
+                                gespeichert in der Bilddatei selbst. Gerade weil Erinnerungen persönlich sind, bleiben
+                                sie dort, wo sie hingehören: bei dir.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="features">
+                <div class="container">
+                    <div class="section-heading split-heading">
+                        <div>
+                            <p class="eyebrow">Kernfunktionen</p>
+                            <h2>Technisch stark.<br> Emotional ganz nah.</h2>
+                        </div>
+                        <p>
+                            Echiviro verbindet ein ruhiges, sinnliches Interface mit einer lokalen Architektur,
+                            die Sicherheit und Erinnerung gleichermaßen ernst nimmt.
+                        </p>
+                    </div>
+
+                    <div class="feature-grid">
+                        <article class="feature-card">
+                            <div class="feature-icon">
+                                <span class="icon-mic"></span>
+                            </div>
+                            <h3>Unsichtbare Stimmen</h3>
+                            <p>
+                                Deine Stimme wird behutsam mit dem Foto verbunden, statt irgendwo daneben zu liegen.
+                                So bleibt aus Bild und Gefühl eine einzige Erinnerung.
+                            </p>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon">
+                                <span class="icon-shield"></span>
+                            </div>
+                            <h3>Absolute Privatsphäre</h3>
+                            <p>
+                                Deine Daten verlassen niemals dein Gerät. Keine Server, keine Accounts - 100%
+                                local-first von der Aufnahme bis zum Export.
+                            </p>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon">
+                                <span class="icon-palette"></span>
+                            </div>
+                            <h3>7 Atmosphären</h3>
+                            <p>
+                                Kuratierte Themes wie Golden Hour oder Nordic Deep färben Interface und Aurora-Hintergrund
+                                passend zu deiner Stimmung.
+                            </p>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon">
+                                <span class="icon-desktop"></span>
+                            </div>
+                            <h3>Desktop Connect</h3>
+                            <p>
+                                Verbinde dein Handy per WLAN mit dem PC und genieße deine Galerie auf dem großen
+                                Bildschirm - ohne Software-Installation.
+                            </p>
+                        </article>
+                    </div>
+                    <p class="section-footnote">
+                        Dazu kommen ein achtsamer Import bestehender Erinnerungen, Zeitkapseln als Albumlogik und eine klare Sprache wie
+                        „Moment einfangen“ und „Gedanken festhalten“, damit Technik nie nüchtern wirkt.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section magic-section">
+                <div class="container">
+                    <div class="section-heading split-heading">
+                        <div>
+                            <p class="eyebrow">Die Magie dahinter</p>
+                            <h2>Gebaut wie ein&nbsp;Erinnerungsort.<br> Nicht wie ein Datensilo.</h2>
+                        </div>
+                        <p>
+                            Hinter dem ruhigen Design arbeitet eine lokale Architektur, die Intimität, Sicherheit und
+                            technische Raffinesse zusammenbringt.
+                        </p>
+                    </div>
+
+                    <div class="magic-grid">
+                        <article class="magic-card">
+                            <h3>Privacy by Design</h3>
+                            <p>
+                                Keine Verbindung nach außen, keine fremden Server, kein anonymer Speicherort.
+                                Sensible Bereiche bleiben geschützt, Erinnerungen bleiben privat.
+                            </p>
+                        </article>
+                        <article class="magic-card">
+                            <h3>Ein Bild, das mehr in sich trägt</h3>
+                            <p>
+                                Die Stimme zum Moment reist mit dem Bild selbst. Für andere bleibt es ein Foto,
+                                für dich bleibt es ein Augenblick, der beim Wiedersehen wieder atmet.
+                            </p>
+                        </article>
+                        <article class="magic-card">
+                            <h3>Pro macht dein Handy zum Archiv</h3>
+                            <p>
+                                Mit Desktop Connect wird dein Smartphone im gleichen WLAN zu deinem privaten Webserver.
+                                Große Erinnerungen auf großem Bildschirm - ganz ohne Cloud.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section demo-section" id="demo">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">Screenshots / Demo</p>
+                        <h2>So fühlt sich Echiviro an.</h2>
+                        <p>
+                            Die wichtigsten Momente der App in einer ruhigen, aurora-getönten Produktpräsentation.
+                        </p>
+                    </div>
+
+                    <div class="screens-grid">
+                        <article class="screen-card">
+                            <div class="screen-preview gallery-preview">
+                                <div class="mini-toolbar"></div>
+                                <div class="album-grid">
+                                    <span></span><span></span><span></span><span></span>
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <h3>Zeitkapsel-Übersicht</h3>
+                            <p>Alben-Grid mit sanften Unschärfen, ruhigen Abstufungen und schneller Orientierung.</p>
+                        </article>
+                        <article class="screen-card">
+                            <div class="screen-preview record-preview">
+                                <div class="record-dot"></div>
+                                <div class="live-wave">
+                                    <span></span><span></span><span></span><span></span><span></span>
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <h3>Moment einfangen</h3>
+                            <p>Die Live-Audiowelle macht die Aufnahme sichtbar, während du den Ton festhältst.</p>
+                        </article>
+                        <article class="screen-card">
+                            <div class="screen-preview slideshow-preview">
+                                <div class="slide-photo"></div>
+                                <div class="slide-controls">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <h3>Erinnerungen abspielen</h3>
+                            <p>Die Slideshow verbindet Bild, Stimme und Atmosphäre zu einem durchgehenden Erlebnis.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section roadmap-section" id="roadmap">
+                <div class="container">
+                    <div class="section-heading split-heading">
+                        <div>
+                            <p class="eyebrow">Roadmap</p>
+                            <h2>Heute schon besonders. Morgen noch unverzichtbarer.</h2>
+                        </div>
+                        <p>
+                            Die Weiterentwicklung von Echiviro bleibt nah am Kern: Erinnerungen intensiver
+                            erlebbar machen, ohne die Local-First-Haltung zu verlieren.
+                        </p>
+                    </div>
+
+                    <div class="roadmap-grid">
+                        <article class="roadmap-card">
+                            <span class="roadmap-phase">Jetzt</span>
+                            <h3>Der hörbare Moment</h3>
+                            <ul class="roadmap-list">
+                                <li>Stimme und Bild als untrennbare Erinnerung</li>
+                                <li>Zeitkapseln, Atmosphären und ein ruhiges Offline-Archiv</li>
+                                <li>Free/Pro-Erlebnis mit emotionalem Onboarding</li>
+                            </ul>
+                        </article>
+                        <article class="roadmap-card roadmap-card-next">
+                            <span class="roadmap-phase">Als Nächstes</span>
+                            <h3>Mehr Wiedererleben</h3>
+                            <ul class="roadmap-list">
+                                <li>Kinoreifer Video-Export für ganze Alben</li>
+                                <li>Intelligente Suche über gesprochene Inhalte</li>
+                                <li>Slideshow und Auto-Playback als noch stärkeres Wiedersehen</li>
+                            </ul>
+                        </article>
+                        <article class="roadmap-card">
+                            <span class="roadmap-phase">Später</span>
+                            <h3>Langfristig bewahren</h3>
+                            <ul class="roadmap-list">
+                                <li>Optional verschlüsseltes Backup für Gerätewechsel</li>
+                                <li>Barrierefreiheit und robustere Geräte-Kompatibilität</li>
+                                <li>Mehr Export-, Sharing- und Familienarchiv-Flows</li>
+                            </ul>
+                        </article>
+                        <article class="roadmap-card roadmap-card-pro">
+                            <span class="roadmap-phase">Für Pro geplant</span>
+                            <h3>Mehr Wert pro Erinnerung</h3>
+                            <ul class="roadmap-list">
+                                <li>Desktop Connect als vollwertiger Wohnzimmer-Modus</li>
+                                <li>Cinematic Export als Premium-Erlebnis für ganze Alben</li>
+                                <li>Mehr Tiefe für Familienarchive und besondere Rückblicke</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section trust-section">
+                <div class="container trust-grid">
+                    <article class="testimonial">
+                        <p class="eyebrow">Vertrauen</p>
+                        <blockquote>
+                            "Echiviro hat die Art, wie ich meine Urlaubsfotos anschaue, komplett verändert. Das
+                            Flüstern meiner Tochter zu dem Bild am Strand ist unbezahlbar."
+                        </blockquote>
+                        <p class="quote-author">Anna S.</p>
+                    </article>
+                    <article class="tech-fact">
+                        <p class="eyebrow">Tech-Fakten</p>
+                        <h2>Deine Erinnerungen bleiben geschützt.</h2>
+                        <p>
+                            Keine losen Sprachmemos, keine fremden Server, kein Gefühl von Kontrollverlust.
+                            Echiviro bewahrt Stimme und Bild zusammen und schützt das, was persönlich bleiben soll.
+                        </p>
+                        <p class="tech-subnote">
+                            Local-first in jeder Ebene - damit Nähe, Ruhe und Sicherheit nicht nur versprochen,
+                            sondern spürbar werden.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section pricing-section" id="pricing">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">Pricing</p>
+                        <h2>Zum Ausprobieren kostenlos. <br> Zum Bewahren wirklich wertvoll.</h2>
+                        <p>
+                            Die Free Version zeigt dir, wie berührend klingende Erinnerungen sein können. <br> Die Pro Version ist für
+                            die Momente, die du nicht begrenzen willst.
+                        </p>
+                    </div>
+
+                    <div class="comparison-strip" aria-label="Vergleich Free und Pro">
+                        <div class="comparison-item">
+                            <span class="comparison-label">Free</span>
+                            <span>Für den ersten Aha-Moment und die ersten 20 Erinnerungen</span>
+                        </div>
+                        <div class="comparison-divider"></div>
+                        <div class="comparison-item comparison-item-pro">
+                            <span class="comparison-label">Pro</span>
+                            <span>Für ein lebenslanges Archiv ohne Limit, Zeitdruck oder spätere Kompromisse</span>
+                        </div>
+                    </div>
+
+                    <div class="monetization-matrix" aria-label="Monetization Matrix">
+                        <div class="matrix-header">
+                            <p class="eyebrow">Monetization Matrix</p>
+                            <h3>Klare Rollen für Free und Pro.</h3>
+                        </div>
+                        <div class="matrix-grid">
+                            <article class="matrix-card">
+                                <span class="matrix-tier">Free</span>
+                                <h4>Magie beweisen</h4>
+                                <p>Der Nutzer soll den emotionalen Kern sofort fühlen, ohne vor einer Paywall zu stehen.</p>
+                                <ul class="matrix-list">
+                                    <li>Demo-Erinnerung, 20 klingende Erinnerungen, 15 Sekunden Stimme pro Moment</li>
+                                    <li>3 Atmosphären, volle Privatsphäre, lokaler Schutz</li>
+                                    <li>Teaser für Pro über Slideshow, Import und Desktop Connect</li>
+                                </ul>
+                            </article>
+                            <article class="matrix-card matrix-card-featured">
+                                <span class="matrix-tier">Pro Unlock</span>
+                                <h4>Archiv freischalten</h4>
+                                <p>Das Hauptprodukt: ein einmaliger Kauf, der Echiviro vom Test in ein dauerhaftes Archiv verwandelt.</p>
+                                <ul class="matrix-list">
+                                    <li>Unbegrenzt Erinnerungen, 1 Stunde Audio, alle Themes</li>
+                                    <li>Import, ZIP-Export, Auto-Playback, Desktop Connect</li>
+                                    <li>Die sauberste Conversion, weil sie perfekt zur No-Abo-Haltung passt</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="pricing-grid">
+                        <article class="pricing-card">
+                            <div class="pricing-badge free-badge">Free Version</div>
+                            <h3>Kostenlos</h3>
+                            <p class="pricing-copy">Perfekt zum Kennenlernen - du erlebst die Magie, bevor du dich festlegst.</p>
+                            <ul class="pricing-list">
+                                <li>Demo-Erinnerung für den sofortigen Aha-Moment</li>
+                                <li>Bis zu 20 klingende Erinnerungen bewahren</li>
+                                <li>3 Basis-Atmosphären</li>
+                                <li>Gedanken festhalten bis zu 15 Sek.</li>
+                                <li>Voller lokaler Schutz und Verschlüsselung</li>
+                            </ul>
+                            <a class="button button-ghost block-button" href="#download">Free ausprobieren</a>
+                        </article>
+
+                        <article class="pricing-card pricing-card-pro">
+                            <div class="pricing-badge pro-badge">Pro Version</div>
+                            <div class="popular-badge">Beliebt</div>
+                            <h3>Einmalig 7,99 €</h3>
+                            <p class="pricing-copy">Die Version für Erinnerungen, die bleiben sollen - ohne Limit, ohne Zeitdruck, ohne späteres Bereuen.</p>
+                            <p class="pricing-emphasis">
+                                Aus einer schönen App wird dein dauerhaftes Familienarchiv.
+                            </p>
+                            <ul class="pricing-list">
+                                <li>Unbegrenzte Anzahl an Erinnerungen</li>
+                                <li>Bis zu 1 Stunde Audio pro Bild</li>
+                                <li>Auto-Playback beim Öffnen eines Moments</li>
+                                <li>Foto-Import, ZIP-Export und Smart Import</li>
+                                <li>Slideshow mit filmischen Übergängen</li>
+                                <li>Alle 7 exklusiven Atmosphären</li>
+                                <li>Desktop Connect im selben WLAN</li>
+                                <li>Screenshot-Schutz als flexibler Toggle</li>
+                                <li>Dankes-Karte für Pro-User</li>
+                            </ul>
+                            <a class="button button-primary block-button" href="#download">Archiv freischalten</a>
+                            <p class="pricing-note">Einmal kaufen. Kein Abo. Für Jahre wiederhören, was sonst verloren gehen würde.</p>
+                        </article>
+                    </div>
+
+                    <div class="support-callout">
+                        <div class="support-copy">
+                            <p class="eyebrow">Unterstuetzen</p>
+                            <h3>Du magst die Idee hinter Echiviro?</h3>
+                            <p>
+                                Wenn du das Projekt unabhaengig unterstuetzen moechtest, kannst du hier direkt
+                                einen Beitrag dalassen - einfach als stilles Danke für eine App mit Haltung.
+                            </p>
+                        </div>
+                        <a class="button button-secondary support-button" href="#">Projekt optional unterstützen</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section faq-section" id="faq">
+                <div class="container faq-grid">
+                    <div class="section-heading faq-heading">
+                        <p class="eyebrow">FAQ</p>
+                        <h2>Die wichtigsten Fragen zu Free und Pro.</h2>
+                    </div>
+                    <div class="faq-list">
+                        <details open>
+                            <summary>Brauche ich Internet?</summary>
+                            <p>Nein, Echiviro funktioniert komplett offline. Die Free- und die Pro-Version folgen beide derselben Local-First-Haltung.</p>
+                        </details>
+                        <details>
+                            <summary>Auf welchen Geräten läuft Echiviro?</summary>
+                            <p>Aktuell ist Echiviro ein Android-Produkt. Der Fokus liegt bewusst auf einer starken, lokalen Android-Erfahrung mit Kamera, Audio und sicherem Gerätespeicher.</p>
+                        </details>
+                        <details>
+                            <summary>Was passiert bei einem Handywechsel?</summary>
+                            <p>Dank Export und der festen Verbindung von Bild und Stimme nimmst du deine Erinnerungen einfach mit. So bleibt dein Archiv auch beim Gerätewechsel greifbar.</p>
+                        </details>
+                        <details>
+                            <summary>Kommt Echiviro auch für iPhone?</summary>
+                            <p>Aktuell nicht. Die Roadmap und das Produkt sind im Moment klar auf Android ausgerichtet, damit Kern-Erlebnis, Stabilität und Local-First-Architektur wirklich ausgereift werden.</p>
+                        </details>
+                        <details>
+                            <summary>Ist das ein Abo?</summary>
+                            <p>Nein. Pro ist als einmaliger Unlock gedacht: einmal kaufen, dauerhaft nutzen. Genau das passt zur ruhigen, lokalen Haltung von Echiviro.</p>
+                        </details>
+                        <details>
+                            <summary>Warum gibt es Free und Pro?</summary>
+                            <p>Free soll die Magie erlebbar machen. Pro ist für alle, die Echiviro als dauerhaftes Erinnerungsarchiv nutzen wollen - ohne Limits bei Menge, Tiefe und Wiedererleben.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="download">
+            <div class="container footer-grid">
+                <div>
+                    <a class="brand footer-brand" href="#top">
+                        <span class="brand-mark"></span>
+                        <span>Echiviro</span>
+                    </a>
+                    <p class="footer-copy">Erinnerungen, die man hören kann - bewahrt mit Ruhe, Nähe und Respekt.</p>
+                    <p class="download-note">Download aktuell nur für Android.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                    <a href="#">Kontakt</a>
+                    <a href="#">Pressekit</a>
+                </div>
+                <div class="footer-actions">
+                    <a class="button button-secondary" href="#">Mit Free auf Android starten</a>
+                    <a class="button button-primary" href="#">Pro auf Google Play freischalten</a>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                <p>© 2024 Echiviro - Made with love for memories.</p>
+            </div>
+        </footer>
     </div>
 
-    <div class="nav-links">
-      <a href="#features">Features</a>
-      <a href="#pricing">Preise</a>
-      <a href="#faq">FAQ</a>
-    </div>
-
-    <a class="button button-secondary" href="#pricing">Pro freischalten</a>
-  </nav>
-
-  <div class="hero-aurora aurora-left"></div>
-  <div class="hero-aurora aurora-right"></div>
-
-  <div class="container hero-grid">
-
-    <div class="hero-copy reveal">
-      <p class="eyebrow">Emotionale Erinnerungen</p>
-      <h1>Deine Erinnerungen haben eine Stimme.</h1>
-
-      <p class="hero-text">
-        Halte nicht nur fest, was du gesehen hast – sondern wie es sich angefühlt hat.
-      </p>
-
-      <div class="hero-actions">
-        <a class="button button-primary" href="#pricing">Mit Free starten</a>
-        <a class="button button-ghost" href="#features">Mehr erfahren</a>
-      </div>
-
-      <ul class="hero-points">
-        <li>100% local-first</li>
-        <li>Kein Abo</li>
-        <li>Bild + Stimme vereint</li>
-      </ul>
-    </div>
-
-    <div class="hero-visual reveal">
-      <div class="phone-frame">
-        <div class="phone-screen">
-          <img class="screen-slide is-active" src="./Render_Onpager1.jpg" alt="">
-          <img class="screen-slide" src="./Render_Onpager2.jpg" alt="">
-          <img class="screen-slide" src="./Render_Onpager3.jpg" alt="">
-        </div>
-      </div>
-    </div>
-
-  </div>
-</header>
-
-<section class="section" id="features">
-  <div class="container">
-    <h2>Technisch stark. Emotional nah.</h2>
-
-    <div class="feature-grid">
-      <div class="feature-card reveal">
-        <h3>Voice im Bild</h3>
-        <p>Audio wird direkt in die Bilddatei integriert.</p>
-      </div>
-
-      <div class="feature-card reveal">
-        <h3>Privatsphäre</h3>
-        <p>Alles bleibt auf deinem Gerät.</p>
-      </div>
-
-      <div class="feature-card reveal">
-        <h3>Story Modus</h3>
-        <p>Erinnerungen wie ein Film erleben.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="pricing">
-  <div class="container">
-    <h2>Einmal zahlen. Für immer behalten.</h2>
-
-    <div class="pricing-grid">
-      <div class="pricing-card reveal">
-        <h3>Free</h3>
-        <p>Perfekt zum Testen</p>
-      </div>
-
-      <div class="pricing-card pricing-card-pro reveal">
-        <h3>Pro – 7,99€</h3>
-        <p>Unbegrenzte Erinnerungen</p>
-        <a class="button button-primary" href="#">Freischalten</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="faq">
-  <div class="container">
-    <h2>FAQ</h2>
-
-    <details class="reveal">
-      <summary>Funktioniert offline?</summary>
-      <p>Ja, komplett lokal.</p>
-    </details>
-
-    <details class="reveal">
-      <summary>Abo?</summary>
-      <p>Nein, einmal kaufen.</p>
-    </details>
-
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <p>© 2026 Echiviro</p>
-  </div>
-</footer>
-
-<script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

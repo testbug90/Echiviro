@@ -1,40 +1,55 @@
-// Scroll Reveal
-const reveals = document.querySelectorAll('.reveal');
+document.addEventListener("DOMContentLoaded", () => {
+    const revealTargets = document.querySelectorAll(".section, .hero-copy, .hero-visual, .footer");
+    revealTargets.forEach((node) => node.setAttribute("data-reveal", ""));
 
-function revealOnScroll() {
-  const trigger = window.innerHeight * 0.85;
+    const revealObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.14,
+            rootMargin: "0px 0px -8% 0px"
+        }
+    );
 
-  reveals.forEach(el => {
-    if (el.getBoundingClientRect().top < trigger) {
-      el.classList.add('active');
+    revealTargets.forEach((node) => revealObserver.observe(node));
+
+    const auroras = document.querySelectorAll(".hero-aurora");
+    const glowRing = document.querySelector(".glow-ring");
+    const slides = Array.from(document.querySelectorAll(".screen-slide"));
+
+    if (slides.length > 1) {
+        let currentSlide = 0;
+
+        const showSlide = (index) => {
+            slides.forEach((slide, slideIndex) => {
+                slide.classList.toggle("is-active", slideIndex === index);
+            });
+        };
+
+        showSlide(currentSlide);
+        window.setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 6200);
     }
-  });
-}
 
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll();
+    document.addEventListener("mousemove", (event) => {
+        const x = (event.clientX / window.innerWidth - 0.5) * 18;
+        const y = (event.clientY / window.innerHeight - 0.5) * 18;
 
+        auroras.forEach((aurora, index) => {
+            const factor = index === 0 ? 1 : -1;
+            aurora.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+        });
 
-// Slideshow
-const slides = document.querySelectorAll('.screen-slide');
-let index = 0;
-
-setInterval(() => {
-  slides[index].classList.remove('is-active');
-  index = (index + 1) % slides.length;
-  slides[index].classList.add('is-active');
-}, 3000);
-
-
-// Aurora Parallax
-const left = document.querySelector('.aurora-left');
-const right = document.querySelector('.aurora-right');
-
-window.addEventListener('scroll', () => {
-  const y = window.scrollY;
-
-  if (left && right) {
-    left.style.transform = `translateY(${y * 0.2}px)`;
-    right.style.transform = `translateY(${y * -0.2}px)`;
-  }
+        if (glowRing) {
+            glowRing.style.transform = `translate(${x * -0.8}px, ${y * -0.8}px)`;
+        }
+    });
 });
