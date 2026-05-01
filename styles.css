@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0b0f1a;
+  color: white;
+}
+
+/* Layout */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  padding: 80px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Aurora */
+.hero-aurora {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  filter: blur(120px);
+  opacity: 0.3;
+}
+
+.aurora-left {
+  background: #a78bfa;
+  top: -100px;
+  left: -100px;
+}
+
+.aurora-right {
+  background: #7dd3fc;
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.button-primary {
+  background: linear-gradient(135deg,#a78bfa,#7dd3fc);
+  color: black;
+}
+
+/* Cards */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  transition: all .3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Pricing */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.pricing-card {
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+}
+
+.pricing-card-pro {
+  border: 1px solid #a78bfa;
+}
+
+/* Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Phone */
+.phone-frame {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.phone-screen img {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.phone-screen img.is-active {
+  opacity: 1;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .hero-grid,
+  .feature-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
