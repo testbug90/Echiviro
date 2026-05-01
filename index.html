@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Echiviro – Deine Erinnerungen haben eine Stimme</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<title>Echiviro – Deine klingenden Erinnerungen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -17,78 +18,105 @@
       <div class="brand-mark"></div>
       Echiviro
     </div>
+
     <div class="nav-links">
       <a href="#features">Features</a>
       <a href="#pricing">Preise</a>
       <a href="#faq">FAQ</a>
     </div>
+
+    <a class="button button-secondary" href="#pricing">Pro freischalten</a>
   </nav>
 
   <div class="hero-aurora aurora-left"></div>
   <div class="hero-aurora aurora-right"></div>
 
   <div class="container hero-grid">
-    <div>
+
+    <div class="hero-copy reveal">
       <p class="eyebrow">Emotionale Erinnerungen</p>
-      <h1>Deine Erinnerungen haben eine Stimme</h1>
+      <h1>Deine Erinnerungen haben eine Stimme.</h1>
+
       <p class="hero-text">
         Halte nicht nur fest, was du gesehen hast – sondern wie es sich angefühlt hat.
       </p>
 
-      <a class="button button-primary" href="#pricing">Jetzt starten</a>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#pricing">Mit Free starten</a>
+        <a class="button button-ghost" href="#features">Mehr erfahren</a>
+      </div>
+
+      <ul class="hero-points">
+        <li>100% local-first</li>
+        <li>Kein Abo</li>
+        <li>Bild + Stimme vereint</li>
+      </ul>
     </div>
 
-    <div class="phone-frame">
-      <div class="phone-screen">
-        <img class="screen-slide is-active" src="./Render_Onpager1.jpg">
-        <img class="screen-slide" src="./Render_Onpager2.jpg">
-        <img class="screen-slide" src="./Render_Onpager3.jpg">
+    <div class="hero-visual reveal">
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <img class="screen-slide is-active" src="./Render_Onpager1.jpg">
+          <img class="screen-slide" src="./Render_Onpager2.jpg">
+          <img class="screen-slide" src="./Render_Onpager3.jpg">
+        </div>
       </div>
     </div>
+
   </div>
 </header>
 
+<!-- FEATURES -->
 <section class="section" id="features">
   <div class="container">
-    <h2>Features</h2>
+    <div class="section-heading">
+      <h2>Technisch stark. Emotional nah.</h2>
+    </div>
 
     <div class="feature-grid">
       <div class="feature-card reveal">
-        <h3>Stimme im Bild</h3>
-        <p>Audio wird direkt im Foto gespeichert.</p>
+        <h3>Voice im Bild</h3>
+        <p>Audio wird direkt in die Bilddatei integriert.</p>
       </div>
 
       <div class="feature-card reveal">
-        <h3>100% Privat</h3>
-        <p>Keine Cloud – alles lokal.</p>
+        <h3>Privatsphäre</h3>
+        <p>Alles bleibt auf deinem Gerät.</p>
       </div>
 
       <div class="feature-card reveal">
         <h3>Story Modus</h3>
-        <p>Erlebe Erinnerungen wie Filme.</p>
+        <p>Erinnerungen wie ein Film erleben.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- PRICING -->
 <section class="section" id="pricing">
   <div class="container">
-    <h2>Preise</h2>
+    <div class="section-heading">
+      <h2>Einmal zahlen. Für immer behalten.</h2>
+    </div>
 
     <div class="pricing-grid">
+
       <div class="pricing-card reveal">
         <h3>Free</h3>
-        <p>Kostenlos starten</p>
+        <p>Perfekt zum Testen</p>
       </div>
 
       <div class="pricing-card pricing-card-pro reveal">
         <h3>Pro – 7,99€</h3>
         <p>Unbegrenzte Erinnerungen</p>
+        <a class="button button-primary" href="#">Freischalten</a>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- FAQ -->
 <section class="section" id="faq">
   <div class="container">
     <h2>FAQ</h2>
@@ -97,6 +125,12 @@
       <summary>Funktioniert offline?</summary>
       <p>Ja, komplett lokal.</p>
     </details>
+
+    <details class="reveal">
+      <summary>Abo?</summary>
+      <p>Nein, einmal kaufen.</p>
+    </details>
+
   </div>
 </section>
 
@@ -107,6 +141,5 @@
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
