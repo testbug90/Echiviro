@@ -1,135 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin:0;
-  font-family:'Inter',sans-serif;
-  background:#0b0f1a;
-  color:white;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0b0f1a;
+  color: white;
 }
 
-/* Layout */
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
 }
 
-/* Hero */
-.hero{
-  position:relative;
-  padding:100px 0;
-  overflow:hidden;
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.hero-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:60px;
+.nav-links {
+  display: flex;
+  gap: 20px;
 }
 
-/* Aurora */
-.hero-aurora{
-  position:absolute;
-  width:500px;
-  height:500px;
-  filter:blur(120px);
-  opacity:.25;
+.nav-links a {
+  color: #9aa1b2;
+  text-decoration: none;
 }
 
-.aurora-left{background:#a78bfa;top:-150px;left:-150px;}
-.aurora-right{background:#7dd3fc;bottom:-150px;right:-150px;}
-
-/* Buttons */
-.button{
-  padding:12px 20px;
-  border-radius:10px;
-  text-decoration:none;
-  transition:.3s;
+.nav-links a:hover {
+  color: white;
 }
 
-.button-primary{
-  background:linear-gradient(135deg,#a78bfa,#7dd3fc);
-  color:black;
+/* HERO */
+.hero {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
 }
 
-.button-primary:hover{
-  transform:translateY(-2px);
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
 }
 
-.button-secondary{
-  border:1px solid rgba(255,255,255,.1);
+.hero-aurora {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  filter: blur(120px);
+  opacity: 0.25;
 }
 
-.button-ghost{
-  color:#9aa1b2;
+.aurora-left {
+  background: #a78bfa;
+  top: -150px;
+  left: -150px;
 }
 
-/* Cards */
-.feature-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
+.aurora-right {
+  background: #7dd3fc;
+  bottom: -150px;
+  right: -150px;
 }
 
-.feature-card{
-  padding:24px;
-  border-radius:16px;
-  background:rgba(255,255,255,.03);
-  transition:.3s;
+/* BUTTONS */
+.button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-.feature-card:hover{
-  transform:translateY(-8px);
+.button-primary {
+  background: linear-gradient(135deg,#a78bfa,#7dd3fc);
+  color: black;
 }
 
-/* Pricing */
-.pricing-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:30px;
+.button-secondary {
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
 }
 
-.pricing-card{
-  padding:30px;
-  border-radius:20px;
-  background:rgba(255,255,255,.03);
+.button-ghost {
+  color: #9aa1b2;
 }
 
-.pricing-card-pro{
-  border:1px solid #a78bfa;
+/* PHONE */
+.phone-frame {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #111;
 }
 
-/* Reveal */
-.reveal{
-  opacity:0;
-  transform:translateY(40px);
-  transition:.8s;
+.phone-screen {
+  position: relative;
+  height: 400px;
 }
 
-.reveal.active{
-  opacity:1;
-  transform:translateY(0);
+.screen-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
-/* Phone */
-.phone-screen{
-  position:relative;
+.screen-slide.is-active {
+  opacity: 1;
 }
 
-.screen-slide{
-  position:absolute;
-  width:100%;
-  opacity:0;
-  transition:1s;
+/* GRID */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
 }
 
-.screen-slide.is-active{
-  opacity:1;
+.feature-card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
 }
 
-/* Responsive */
-@media(max-width:900px){
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+/* PRICING */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.pricing-card {
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+}
+
+.pricing-card-pro {
+  border: 1px solid #a78bfa;
+}
+
+/* REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
   .hero-grid,
   .feature-grid,
-  .pricing-grid{
-    grid-template-columns:1fr;
+  .pricing-grid {
+    grid-template-columns: 1fr;
   }
 }
