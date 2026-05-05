@@ -166,6 +166,220 @@ summary {
     overflow: hidden;
 }
 
+.legal-page .hero {
+    min-height: auto;
+    padding-bottom: 0;
+}
+
+.legal-page main .section:first-child {
+    padding-top: 24px;
+}
+
+.legal-page main {
+    position: relative;
+}
+
+.legal-page main::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: min(680px, 72vw);
+    height: 380px;
+    background: radial-gradient(circle, rgba(121, 177, 255, 0.12), transparent 68%);
+    pointer-events: none;
+    filter: blur(10px);
+}
+
+.legal-section {
+    position: relative;
+    z-index: 1;
+}
+
+.legal-layout {
+    display: grid;
+    gap: 32px;
+}
+
+.legal-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
+.legal-intro,
+.legal-summary,
+.legal-card,
+.legal-note {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(18px);
+}
+
+.legal-intro {
+    padding: 34px;
+    background:
+        radial-gradient(circle at top left, rgba(240, 226, 200, 0.08), transparent 38%),
+        linear-gradient(160deg, rgba(240, 226, 200, 0.05), rgba(121, 177, 255, 0.05)),
+        var(--panel);
+}
+
+.legal-intro .section-heading {
+    margin-bottom: 0;
+}
+
+.legal-intro .section-heading h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.7rem, 5vw, 4.5rem);
+    line-height: 0.98;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.legal-lead {
+    max-width: 60ch;
+    color: var(--muted);
+    font-size: 1.08rem;
+    line-height: 1.8;
+    margin-top: 24px;
+}
+
+.legal-summary {
+    padding: 28px;
+    display: grid;
+    gap: 18px;
+    align-content: start;
+}
+
+.legal-kicker {
+    display: inline-flex;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text);
+    background: rgba(240, 226, 200, 0.08);
+    border: 1px solid rgba(240, 226, 200, 0.12);
+}
+
+.legal-summary h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.75rem;
+    line-height: 1.15;
+    font-weight: 600;
+}
+
+.legal-summary p,
+.legal-note p,
+.legal-card p,
+.legal-list li {
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+.legal-facts {
+    display: grid;
+    gap: 14px;
+}
+
+.legal-fact {
+    padding-top: 14px;
+    border-top: 1px solid rgba(240, 226, 200, 0.1);
+}
+
+.legal-fact-label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--text);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.legal-fact-value {
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+.legal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.legal-card {
+    padding: 28px;
+}
+
+.legal-card-wide {
+    grid-column: 1 / -1;
+}
+
+.legal-card h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    line-height: 1.15;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.legal-card p + p {
+    margin-top: 14px;
+}
+
+.legal-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+.legal-list li {
+    position: relative;
+    padding-left: 22px;
+}
+
+.legal-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--cyan));
+}
+
+.legal-note {
+    padding: 24px 28px;
+    background:
+        linear-gradient(160deg, rgba(240, 226, 200, 0.08), rgba(121, 177, 255, 0.07)),
+        rgba(35, 27, 20, 0.8);
+}
+
+.legal-note h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.legal-page main a:not(.brand):not(.button) {
+    color: #cbe0ff;
+    text-decoration: underline;
+    text-decoration-color: rgba(203, 224, 255, 0.35);
+    text-underline-offset: 0.18em;
+}
+
+.legal-page main a:not(.brand):not(.button):hover {
+    color: var(--text);
+    text-decoration-color: rgba(240, 226, 200, 0.55);
+}
+
 .hero-grid {
     display: grid;
     grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
@@ -1229,6 +1443,8 @@ summary {
 }
 
 @media (max-width: 1080px) {
+    .legal-hero,
+    .legal-grid,
     .hero-grid,
     .trust-grid,
     .faq-grid,
@@ -1347,12 +1563,20 @@ summary {
     .screen-card,
     .pricing-card,
     .testimonial,
-    .tech-fact {
+    .tech-fact,
+    .legal-intro,
+    .legal-summary,
+    .legal-card,
+    .legal-note {
         padding: 22px;
         border-radius: 20px;
     }
 
     .faq-list details {
         border-radius: 20px;
+    }
+
+    .legal-intro .section-heading h1 {
+        font-size: clamp(2.2rem, 12vw, 3.1rem);
     }
 }

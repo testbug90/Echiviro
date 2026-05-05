@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="legal-page">
     <div class="page-shell">
         <header class="hero">
             <nav class="nav container">
@@ -29,53 +29,93 @@
         </header>
 
         <main>
-            <section class="section">
+            <section class="section legal-section">
                 <div class="container">
-                    <div class="section-heading">
-                        <p class="eyebrow">Impressum</p>
-                        <h1>Impressum</h1>
-                        <p>Angaben gemäß § 5 TMG</p>
-                    </div>
+                    <div class="legal-layout">
+                        <div class="legal-hero">
+                            <div class="legal-intro">
+                                <div class="section-heading">
+                                    <p class="eyebrow">Impressum</p>
+                                    <h1>Klare Angaben. Ruhig gestaltet.</h1>
+                                    <p>Angaben gemäß § 5 TMG</p>
+                                </div>
+                                <p class="legal-lead">
+                                    Hier findest du die rechtlich erforderlichen Informationen zu Echiviro in einer kompakten,
+                                    gut lesbaren Form.
+                                </p>
+                            </div>
 
-                    <div class="legal-content">
-                        <h2>Verantwortlich für den Inhalt</h2>
-                        <p>
-                            Echiviro<br>
-                            [Vollständiger Name des Entwicklers]<br>
-                            [Straße und Hausnummer]<br>
-                            [PLZ und Ort]<br>
-                            Deutschland<br>
-                        </p>
+                            <aside class="legal-summary" aria-label="Kurzübersicht Impressum">
+                                <span class="legal-kicker">Kurzübersicht</span>
+                                <h2>Rechtliche Basis auf einen Blick</h2>
+                                <div class="legal-facts">
+                                    <div class="legal-fact">
+                                        <span class="legal-fact-label">Dokument</span>
+                                        <p class="legal-fact-value">Impressum für Echiviro</p>
+                                    </div>
+                                    <div class="legal-fact">
+                                        <span class="legal-fact-label">Geltung</span>
+                                        <p class="legal-fact-value">Website und zugehörige Inhalte</p>
+                                    </div>
+                                    <div class="legal-fact">
+                                        <span class="legal-fact-label">Verweis</span>
+                                        <p class="legal-fact-value"><a href="datenschutz.html">Zur Datenschutzerklärung</a></p>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
 
-                        <h2>Kontakt</h2>
-                        <p>
-                            E-Mail: [E-Mail-Adresse]<br>
-                            Telefon: [Telefonnummer, falls vorhanden]<br>
-                        </p>
+                        <div class="legal-grid">
+                            <article class="legal-card">
+                                <h2>Verantwortlich für den Inhalt</h2>
+                                <p>
+                                    Echiviro<br>
+                                    Danny Eichner
+                                    Deutschland
+                                </p>
+                            </article>
 
-                        <h2>Haftungsausschluss</h2>
-                        <p>
-                            Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit
-                            und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
-                        </p>
+                            <article class="legal-card">
+                                <h2>Kontakt</h2>
+                                <p>
+                                    E-Mail: crashedsystem@vodafone.com<br>
+                            
+                                </p>
+                            </article>
 
-                        <h2>Haftung für Links</h2>
-                        <p>
-                            Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben.
-                            Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
-                        </p>
+                            <article class="legal-card">
+                                <h2>Haftungsausschluss</h2>
+                                <p>
+                                    Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
+                                    Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+                                </p>
+                            </article>
 
-                        <h2>Urheberrecht</h2>
-                        <p>
-                            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
-                            Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
-                            Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-                        </p>
+                            <article class="legal-card">
+                                <h2>Haftung für Links</h2>
+                                <p>
+                                    Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
+                                    Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+                                </p>
+                            </article>
 
-                        <h2>Datenschutz</h2>
-                        <p>
-                            Unsere Datenschutzerklärung findest du <a href="datenschutz.html">hier</a>.
-                        </p>
+                            <article class="legal-card legal-card-wide">
+                                <h2>Urheberrecht</h2>
+                                <p>
+                                    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
+                                    deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+                                    Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des
+                                    jeweiligen Autors bzw. Erstellers.
+                                </p>
+                            </article>
+                        </div>
+
+                        <aside class="legal-note">
+                            <h2>Datenschutz</h2>
+                            <p>
+                                Unsere Datenschutzerklärung findest du <a href="datenschutz.html">hier</a>.
+                            </p>
+                        </aside>
                     </div>
                 </div>
             </section>

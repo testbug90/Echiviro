@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="legal-page">
     <div class="page-shell">
         <header class="hero">
             <nav class="nav container">
@@ -29,64 +29,101 @@
         </header>
 
         <main>
-            <section class="section">
+            <section class="section legal-section">
                 <div class="container">
-                    <div class="section-heading">
-                        <p class="eyebrow">Datenschutz</p>
-                        <h1>Datenschutzerklärung</h1>
-                        <p>Stand: Mai 2024</p>
-                    </div>
+                    <div class="legal-layout">
+                        <div class="legal-hero">
+                            <div class="legal-intro">
+                                <div class="section-heading">
+                                    <p class="eyebrow">Datenschutz</p>
+                                    <h1>Privatsphäre zuerst. Ohne Umwege.</h1>
+                                    <p>Stand: Mai 2026</p>
+                                </div>
+                                <p class="legal-lead">
+                                    Echiviro ist als local-first App gedacht. Diese Seite fasst transparent zusammen, welche Daten
+                                    verarbeitet werden, welche nicht und wie lokale Funktionen geschützt sind.
+                                </p>
+                            </div>
 
-                    <div class="legal-content">
-                        <h2>1. Einleitung</h2>
-                        <p>
-                            Echiviro ist eine local-first App, die deine Privatsphäre und den Schutz deiner persönlichen Daten ernst nimmt.
-                            Diese Datenschutzerklärung erklärt, wie wir mit deinen Daten umgehen – oder besser gesagt, dass wir das gar nicht tun.
-                        </p>
+                            <aside class="legal-summary" aria-label="Kurzübersicht Datenschutz">
+                                <span class="legal-kicker">Kurzübersicht</span>
+                                <h2>Was für Nutzerinnen und Nutzer zählt</h2>
+                                <ul class="legal-list">
+                                    <li>Keine Cloud-Speicherung für App-Inhalte</li>
+                                    <li>Keine Weitergabe an Dritte</li>
+                                    <li>Lokale Speicherung direkt auf dem Gerät</li>
+                                    <li>Desktop Connect nur im lokalen Netzwerk</li>
+                                </ul>
+                            </aside>
+                        </div>
 
-                        <h2>2. Keine Datensammlung</h2>
-                        <p>
-                            Echiviro sammelt keine persönlichen Daten. Die App funktioniert komplett offline und speichert alle Informationen
-                            ausschließlich lokal auf deinem Gerät. Es gibt keine Server, keine Cloud-Speicherung und keine Datenübertragung
-                            an Dritte.
-                        </p>
+                        <div class="legal-grid">
+                            <article class="legal-card">
+                                <h2>1. Einleitung</h2>
+                                <p>
+                                    Echiviro ist eine local-first App, die deine Privatsphäre und den Schutz deiner persönlichen
+                                    Daten ernst nimmt. Diese Datenschutzerklärung erklärt, wie wir mit deinen Daten umgehen - oder
+                                    besser gesagt, dass wir das gar nicht tun.
+                                </p>
+                            </article>
 
-                        <h2>3. Lokale Speicherung</h2>
-                        <p>
-                            Deine Fotos und Sprachaufzeichnungen werden direkt in der Bilddatei gespeichert (JPEG-Steganografie).
-                            Diese Dateien bleiben auf deinem Gerät und werden nicht an externe Server übertragen.
-                        </p>
+                            <article class="legal-card">
+                                <h2>2. Keine Datensammlung</h2>
+                                <p>
+                                    Echiviro sammelt keine persönlichen Daten. Die App funktioniert komplett offline und speichert
+                                    alle Informationen ausschließlich lokal auf deinem Gerät. Es gibt keine Server, keine
+                                    Cloud-Speicherung und keine Datenübertragung an Dritte.
+                                </p>
+                            </article>
 
-                        <h2>4. Desktop Connect</h2>
-                        <p>
-                            Bei der Nutzung des Desktop Connect-Features werden Daten temporär über dein lokales WLAN übertragen.
-                            Diese Verbindung ist verschlüsselt und erfolgt nur zwischen deinem Handy und deinem PC im gleichen Netzwerk.
-                            Es werden keine Daten außerhalb deines lokalen Netzwerks übertragen.
-                        </p>
+                            <article class="legal-card">
+                                <h2>3. Lokale Speicherung</h2>
+                                <p>
+                                    Deine Fotos und Sprachaufzeichnungen werden direkt in der Bilddatei gespeichert
+                                    (JPEG-Steganografie). Diese Dateien bleiben auf deinem Gerät und werden nicht an externe
+                                    Server übertragen.
+                                </p>
+                            </article>
 
-                        <h2>5. Berechtigungen</h2>
-                        <p>
-                            Echiviro benötigt Zugriff auf Kamera, Mikrofon und Speicher, um Fotos aufzunehmen und Sprachaufzeichnungen zu erstellen.
-                            Diese Berechtigungen werden nur für die lokale Funktionalität der App verwendet und nicht für Tracking oder Werbung.
-                        </p>
+                            <article class="legal-card">
+                                <h2>4. Desktop Connect</h2>
+                                <p>
+                                    Bei der Nutzung des Desktop Connect-Features werden Daten temporär über dein lokales WLAN
+                                    übertragen. Diese Verbindung ist verschlüsselt und erfolgt nur zwischen deinem Handy und
+                                    deinem PC im gleichen Netzwerk. Es werden keine Daten außerhalb deines lokalen Netzwerks
+                                    übertragen.
+                                </p>
+                            </article>
 
-                        <h2>6. Sicherheit</h2>
-                        <p>
-                            Alle gespeicherten Daten werden mit AES-256-Verschlüsselung geschützt. Die App nutzt den Android Keystore
-                            für sichere Schlüsselverwaltung.
-                        </p>
+                            <article class="legal-card">
+                                <h2>5. Berechtigungen</h2>
+                                <p>
+                                    Echiviro benötigt Zugriff auf Kamera, Mikrofon und Speicher, um Fotos aufzunehmen und
+                                    Sprachaufzeichnungen zu erstellen. Diese Berechtigungen werden nur für die lokale
+                                    Funktionalität der App verwendet und nicht für Tracking oder Werbung.
+                                </p>
+                            </article>
 
-                        <h2>7. Kontakt</h2>
-                        <p>
-                            Bei Fragen zu dieser Datenschutzerklärung oder zum Datenschutz in Echiviro kannst du uns über die
-                            Impressums-Seite kontaktieren.
-                        </p>
+                            <article class="legal-card">
+                                <h2>6. Sicherheit</h2>
+                                <p>
+                                    Alle gespeicherten Daten werden mit AES-256-Verschlüsselung geschützt. Die App nutzt den
+                                    Android Keystore für sichere Schlüsselverwaltung.
+                                </p>
+                            </article>
+                        </div>
 
-                        <h2>8. Änderungen</h2>
-                        <p>
-                            Diese Datenschutzerklärung kann aktualisiert werden. Bei wesentlichen Änderungen werden wir dich
-                            über die App oder unsere Website informieren.
-                        </p>
+                        <aside class="legal-note">
+                            <h2>Kontakt und Änderungen</h2>
+                            <p>
+                                Bei Fragen zu dieser Datenschutzerklärung oder zum Datenschutz in Echiviro kannst du uns über die
+                                <a href="impressum.html">Impressums-Seite</a> kontaktieren.
+                            </p>
+                            <p>
+                                Diese Datenschutzerklärung kann aktualisiert werden. Bei wesentlichen Änderungen werden wir dich
+                                über die App oder unsere Website informieren.
+                            </p>
+                        </aside>
                     </div>
                 </div>
             </section>
