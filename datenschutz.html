@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ga-consent.css">
+    <script src="ga-config.js" defer></script>
+    <script src="google-analytics.js" defer></script>
 </head>
 <body class="legal-page">
     <div class="page-shell">
@@ -70,14 +73,55 @@
                             <article class="legal-card">
                                 <h2>2. Keine Datensammlung</h2>
                                 <p>
-                                    Echiviro sammelt keine persönlichen Daten. Die App funktioniert komplett offline und speichert
-                                    alle Informationen ausschließlich lokal auf deinem Gerät. Es gibt keine Server, keine
-                                    Cloud-Speicherung und keine Datenübertragung an Dritte.
+                                    Echiviro sammelt in der App keine persönlichen Daten. Die App funktioniert komplett offline
+                                    und speichert alle Informationen ausschließlich lokal auf deinem Gerät. Es gibt dort keine
+                                    Cloud-Speicherung und keine Weitergabe an Dritte.
                                 </p>
                             </article>
 
                             <article class="legal-card">
-                                <h2>3. Lokale Speicherung</h2>
+                                <h2>3. Website-Analyse mit Einwilligung</h2>
+                                <p>
+                                    Auf dieser Website nutzen wir Google Analytics 4 (Google Ireland Limited, Gordon House,
+                                    Barrow Street, Dublin 4, Irland), um die Nutzung der Website besser zu verstehen und Inhalte
+                                    zu verbessern. Die Auswertung ist auf drei Seiten beschränkt: Startseite, Datenschutzerklärung
+                                    und Impressum.
+                                </p>
+                                <p>
+                                    Google Analytics wird erst aktiviert, wenn du im Consent-Banner ausdrücklich zustimmst.
+                                    Ohne deine Einwilligung wird das Google-Tag auf diesen Seiten nicht geladen. Rechtsgrundlage
+                                    für die Verarbeitung ist daher deine Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO.
+                                </p>
+                                <p>
+                                    Nach deiner Zustimmung kann Google Analytics insbesondere Informationen über Seitenaufrufe,
+                                    ungefähre Standortdaten, technische Informationen zu Browser und Endgerät sowie Nutzungsdaten
+                                    erfassen. Google Analytics verwendet dafür Cookies beziehungsweise ähnliche
+                                    Wiedererkennungsmechanismen, insbesondere zur Unterscheidung von Besuchern und Sitzungen.
+                                </p>
+                                <p>
+                                    Wir haben die Einbindung datensparsam konfiguriert. Personalisierte Werbung ist deaktiviert,
+                                    Google-Signale werden nicht aktiviert und die Auswertung dient ausschließlich statistischen
+                                    Zwecken. Nach Angaben von Google Analytics 4 werden bei der Datenerhebung keine einzelnen
+                                    IP-Adressen protokolliert oder gespeichert; bei Zugriffen aus der EU werden IP-Adressen vor
+                                    der Speicherung verworfen, nachdem daraus grobe Standortinformationen abgeleitet wurden.
+                                </p>
+                                <p>
+                                    Deine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen, indem du auf
+                                    „Cookie-Einstellungen“ im Footer klickst und die Entscheidung neu triffst. Die bis zum
+                                    Widerruf erfolgte Verarbeitung bleibt davon unberührt.
+                                </p>
+                                <p>
+                                    Es kann nicht ausgeschlossen werden, dass im Rahmen der Nutzung von Google Analytics Daten
+                                    auch an Google LLC in den USA übermittelt werden. Weitere Informationen zur Verarbeitung durch
+                                    Google findest du in der Datenschutzerklärung von Google unter
+                                    <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>
+                                    sowie in den Informationen zu Google Analytics unter
+                                    <a href="https://support.google.com/analytics/answer/12017362?hl=de" target="_blank" rel="noopener noreferrer">support.google.com/analytics</a>.
+                                </p>
+                            </article>
+
+                            <article class="legal-card">
+                                <h2>4. Lokale Speicherung</h2>
                                 <p>
                                     Deine Fotos und Sprachaufzeichnungen werden direkt in der Bilddatei gespeichert
                                     (JPEG-Steganografie). Diese Dateien bleiben auf deinem Gerät und werden nicht an externe
@@ -86,7 +130,7 @@
                             </article>
 
                             <article class="legal-card">
-                                <h2>4. Desktop Connect</h2>
+                                <h2>5. Desktop Connect</h2>
                                 <p>
                                     Bei der Nutzung des Desktop Connect-Features werden Daten temporär über dein lokales WLAN
                                     übertragen. Diese Verbindung ist verschlüsselt und erfolgt nur zwischen deinem Handy und
@@ -96,7 +140,7 @@
                             </article>
 
                             <article class="legal-card">
-                                <h2>5. Berechtigungen</h2>
+                                <h2>6. Berechtigungen</h2>
                                 <p>
                                     Echiviro benötigt Zugriff auf Kamera, Mikrofon und Speicher, um Fotos aufzunehmen und
                                     Sprachaufzeichnungen zu erstellen. Diese Berechtigungen werden nur für die lokale
@@ -105,7 +149,7 @@
                             </article>
 
                             <article class="legal-card">
-                                <h2>6. Sicherheit</h2>
+                                <h2>7. Sicherheit</h2>
                                 <p>
                                     Alle gespeicherten Daten werden mit AES-256-Verschlüsselung geschützt. Die App nutzt den
                                     Android Keystore für sichere Schlüsselverwaltung.
@@ -142,6 +186,7 @@
                     <a href="impressum.html">Impressum</a>
                     <a href="datenschutz.html">Datenschutz</a>
                     <a href="index.html#notify">Kontakt</a>
+                    <button class="cookie-settings-link" type="button" data-open-cookie-settings>Cookie-Einstellungen</button>
                 </div>
             </div>
             <div class="container footer-bottom">
