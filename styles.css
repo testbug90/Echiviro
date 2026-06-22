@@ -41,7 +41,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     
-    /* Organisches, sehr schwaches Leuchten im Hintergrund */
+    /* Organisches Leuchten im Hintergrund */
     background: radial-gradient(circle at top right, rgba(197, 160, 89, 0.03), transparent 40%),
                 radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.02), transparent 40%);
 }
@@ -127,7 +127,7 @@ p {
     margin-bottom: 5rem;
 }
 
-/* Header Banner (Proportional entfaltet) */
+/* Header Banner */
 .header-banner {
     width: 100%;
     border-bottom: 1px solid var(--line-color);
@@ -208,7 +208,7 @@ p {
     color: var(--accent);
 }
 
-/* Phone Mockup Structure */
+/* Phone Mockup */
 .phone-frame {
     width: min(340px, 100%);
     aspect-ratio: 9 / 19;
@@ -246,7 +246,7 @@ p {
     transform: scale(1);
 }
 
-/* Renderbild-Pfade für das Endgerät */
+/* Slider-Bildpfade */
 .screen-one {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4)), 
                       url('Render_Onpager1.jpg');
@@ -262,7 +262,7 @@ p {
                       url('Render_Onpager3.jpg');
 }
 
-/* Editorial Layouts & Elements */
+/* Editorial Architecture */
 .editorial-quote-block {
     border-left: 1px solid var(--accent);
     padding-left: 2rem;
@@ -378,7 +378,6 @@ p {
     border-top: 1px solid var(--line-color);
 }
 
-/* Interaktiver Goldschimmer */
 .feature-strip:hover {
     background: linear-gradient(90deg, var(--accent-faint), transparent);
 }
@@ -444,6 +443,54 @@ p {
 
 .node-title {
     margin-bottom: 0;
+}
+
+/* Beta / Atelier-Einlass Sektion */
+.section-beta {
+    background: linear-gradient(180deg, transparent 0%, rgba(197, 160, 89, 0.01) 100%);
+}
+
+.beta-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 540px;
+    margin: 3.5rem auto 0 auto;
+}
+
+.beta-input {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid var(--line-color);
+    padding: 1.1rem 1.5rem;
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    transition: border-color 0.4s ease, background-color 0.4s ease;
+}
+
+.beta-input:focus {
+    outline: none;
+    background-color: rgba(197, 160, 89, 0.01);
+    border-color: var(--accent);
+}
+
+.beta-success-message {
+    padding: 3rem 0;
+    animation: fadeAtelierIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes fadeAtelierIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Footer */
@@ -530,6 +577,16 @@ p {
     .footer-content {
         flex-direction: column;
         gap: 2.5rem;
+    }
+    
+    .beta-form {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .beta-input {
+        width: 100%;
+        text-align: center;
     }
 }
 
