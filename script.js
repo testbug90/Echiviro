@@ -1,42 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const revealElements = document.querySelectorAll('section, .hero-content, .footer');
+/**
+ * Echiviro — Das digitale Vermächtnis
+ * Stabiler Slider-Wechsel für das Smartphone-Mockup
+ */
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".screen-slide");
+    
+    // Führe den Slider nur aus, wenn Slider-Elemente existieren 
+    // (verhindert Fehler auf den Rechtsseiten Impressum/Datenschutz)
+    if (slides.length > 0) {
+        let currentSlide = 0;
 
-    const observer = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                obs.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -10% 0px'
-    });
+        function nextSlide() {
+            // Entferne die aktive Klasse vom aktuellen Bild
+            slides[currentSlide].classList.remove("active");
+            
+            // Berechne den Index des nächsten Bildes
+            currentSlide = (currentSlide + 1) % slides.length;
+            
+            // Füge die aktive Klasse dem neuen Bild hinzu
+            slides[currentSlide].classList.add("active");
+        }
 
-    revealElements.forEach(el => {
-        el.setAttribute('data-reveal', '');
-        observer.observe(el);
-    });
-
-    const hero = document.querySelector('.hero');
-    if (!hero) return;
-
-    hero.addEventListener('mousemove', event => {
-        const x = (event.clientX / window.innerWidth - 0.5) * 12;
-        const y = (event.clientY / window.innerHeight - 0.5) * 12;
-        hero.style.setProperty('--pointer-x', `${x}px`);
-        hero.style.setProperty('--pointer-y', `${y}px`);
-    });
-
-    const slides = document.querySelectorAll('.screen-slide');
-    if (slides.length > 1) {
-        let index = 0;
-        setInterval(() => {
-            slides[index].style.opacity = '0';
-            slides[index].style.transform = 'scale(0.98)';
-            index = (index + 1) % slides.length;
-            slides[index].style.opacity = '1';
-            slides[index].style.transform = 'scale(1)';
-        }, 5200);
+        // Starte den automatischen, sanften Bildwechsel alle 4 Sekunden (4000ms)
+        if (slides.length > 1) {
+            setInterval(nextSlide, 4000);
+        }
     }
 });
