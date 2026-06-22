@@ -274,7 +274,7 @@ p {
     color: var(--text-secondary);
 }
 
-/* Voices (Stimmen der Bewahrer) */
+/* Voices */
 .voices-container {
     margin-top: 8rem;
 }
@@ -445,7 +445,7 @@ p {
     margin-bottom: 0;
 }
 
-/* Beta / Atelier-Einlass Sektion */
+/* Beta / Anmeldung */
 .section-beta {
     background: linear-gradient(180deg, transparent 0%, rgba(197, 160, 89, 0.01) 100%);
 }
