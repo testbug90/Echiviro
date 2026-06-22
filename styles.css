@@ -240,9 +240,9 @@ p {
     filter: contrast(1.05) brightness(0.9);
 }
 
-.screen-slide:first-child,
+/* KORRIGIERT: Volle Deckkraft (1) beim Umschalten gegen Ghosting-Effekt */
 .screen-slide.active {
-    opacity: 0.85; 
+    opacity: 1; 
     transform: scale(1);
 }
 
