@@ -1,6 +1,7 @@
-/* Echiviro – Das digitale Vermächtnis 
+/* ==========================================================================
+   Echiviro – Das digitale Vermächtnis 
    Design-Philosophie: Luxury Analog
-*/
+   ========================================================================== */
 
 :root {
     --bg-color: #000000;
@@ -126,7 +127,7 @@ p {
     margin-bottom: 5rem;
 }
 
-/* Header Banner - KORRIGIERT: Keine harte Höhenkappung mehr */
+/* Header Banner (Proportional entfaltet) */
 .header-banner {
     width: 100%;
     border-bottom: 1px solid var(--line-color);
@@ -207,7 +208,7 @@ p {
     color: var(--accent);
 }
 
-/* Phone Mockup - KORRIGIERT: Absolutes Inset für den Screen garantiert Sichtbarkeit */
+/* Phone Mockup Structure */
 .phone-frame {
     width: min(340px, 100%);
     aspect-ratio: 9 / 19;
@@ -221,14 +222,13 @@ p {
 
 .phone-screen {
     position: absolute;
-    inset: 12px; /* Schafft den präzisen Rahmen (Bezel) um den Bildschirm */
+    inset: 12px; 
     border-radius: 30px;
     background-color: #070707;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* KORRIGIERT: Fallback-Logik für den Slider-Wechsel */
 .screen-slide {
     position: absolute;
     inset: 0;
@@ -240,14 +240,29 @@ p {
     filter: contrast(1.05) brightness(0.9);
 }
 
-/* Das erste Bild ist sichtbar, falls JS noch nicht aktiv ist, oder wenn es die Klasse .active hat */
 .screen-slide:first-child,
 .screen-slide.active {
-    opacity: 0.85; /* Sanftes Einbetten in das OLED-Schwarz */
+    opacity: 0.85; 
     transform: scale(1);
 }
 
-/* Sections & Editorial Layouts */
+/* Renderbild-Pfade für das Smartphone-Mockup */
+.screen-one {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4)), 
+                      url('Render_Onpager1.jpg');
+}
+
+.screen-two {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4)), 
+                      url('Render_Onpager2.jpg');
+}
+
+.screen-three {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4)), 
+                      url('Render_Onpager3.jpg');
+}
+
+/* Editorial Layouts & Elements */
 .editorial-quote-block {
     border-left: 1px solid var(--accent);
     padding-left: 2rem;
@@ -344,7 +359,7 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Feature Strips */
+/* Feature Strips (Bausteine) */
 .features-editorial-list {
     display: flex;
     flex-direction: column;
@@ -356,14 +371,14 @@ p {
     gap: 4rem;
     padding: 4rem 0;
     border-bottom: 1px solid var(--line-color);
-    transition: background-color 0.5s ease; /* Ermöglicht ein sanftes Ein- und Ausblenden */
+    transition: background-color 0.5s ease; 
 }
 
 .feature-strip:first-child {
     border-top: 1px solid var(--line-color);
 }
 
-/* Jeder Bausteine schimmert nun rituell auf, wenn man ihn betrachtet/berührt */
+/* Interaktiver, feiner Goldschimmer beim Berühren */
 .feature-strip:hover {
     background: linear-gradient(90deg, var(--accent-faint), transparent);
 }
@@ -382,8 +397,7 @@ p {
     margin-bottom: 1rem;
 }
 
-/* KORRIGIERT: Kein permanenter Hintergrund mehr. 
-   Nur eine feine goldene statt graue Linie als leiser, edler Akzent für das Finale. */
+/* Ruhiges, dezentes Linienfinish für das Finale */
 .highlight-strip {
     border-bottom: 1px solid var(--line-gold);
 }
