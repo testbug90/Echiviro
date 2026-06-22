@@ -1,55 +1,42 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const revealTargets = document.querySelectorAll(".section, .hero-copy, .hero-visual, .footer");
-    revealTargets.forEach((node) => node.setAttribute("data-reveal", ""));
+document.addEventListener('DOMContentLoaded', () => {
+    const revealElements = document.querySelectorAll('section, .hero-content, .footer');
 
-    const revealObserver = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("is-visible");
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        },
-        {
-            threshold: 0.14,
-            rootMargin: "0px 0px -8% 0px"
-        }
-    );
-
-    revealTargets.forEach((node) => revealObserver.observe(node));
-
-    const auroras = document.querySelectorAll(".hero-aurora");
-    const glowRing = document.querySelector(".glow-ring");
-    const slides = Array.from(document.querySelectorAll(".screen-slide"));
-
-    if (slides.length > 1) {
-        let currentSlide = 0;
-
-        const showSlide = (index) => {
-            slides.forEach((slide, slideIndex) => {
-                slide.classList.toggle("is-active", slideIndex === index);
-            });
-        };
-
-        showSlide(currentSlide);
-        window.setInterval(() => {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }, 6200);
-    }
-
-    document.addEventListener("mousemove", (event) => {
-        const x = (event.clientX / window.innerWidth - 0.5) * 18;
-        const y = (event.clientY / window.innerHeight - 0.5) * 18;
-
-        auroras.forEach((aurora, index) => {
-            const factor = index === 0 ? 1 : -1;
-            aurora.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                obs.unobserve(entry.target);
+            }
         });
-
-        if (glowRing) {
-            glowRing.style.transform = `translate(${x * -0.8}px, ${y * -0.8}px)`;
-        }
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -10% 0px'
     });
+
+    revealElements.forEach(el => {
+        el.setAttribute('data-reveal', '');
+        observer.observe(el);
+    });
+
+    const hero = document.querySelector('.hero');
+    if (!hero) return;
+
+    hero.addEventListener('mousemove', event => {
+        const x = (event.clientX / window.innerWidth - 0.5) * 12;
+        const y = (event.clientY / window.innerHeight - 0.5) * 12;
+        hero.style.setProperty('--pointer-x', `${x}px`);
+        hero.style.setProperty('--pointer-y', `${y}px`);
+    });
+
+    const slides = document.querySelectorAll('.screen-slide');
+    if (slides.length > 1) {
+        let index = 0;
+        setInterval(() => {
+            slides[index].style.opacity = '0';
+            slides[index].style.transform = 'scale(0.98)';
+            index = (index + 1) % slides.length;
+            slides[index].style.opacity = '1';
+            slides[index].style.transform = 'scale(1)';
+        }, 5200);
+    }
 });
