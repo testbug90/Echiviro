@@ -35,7 +35,7 @@ Das Fundament von Echiviro bietet dir von der ersten Sekunde an ein lückenloses
 
 ---
 
-## 🗺️ Die Evolution (Zukünftige Roadmap)
+##  Die Evolution (Zukünftige Roadmap)
 
 Mit dem Erwerb der App unterstützt du die unabhängige Weiterentwicklung. Folgende Funktionen befinden sich bereits in der Konzeption und erscheinen als kostenlose Inhaltsupdates:
 
@@ -47,7 +47,7 @@ Mit dem Erwerb der App unterstützt du die unabhängige Weiterentwicklung. Folge
 
 ---
 
-## 🛠️ Technischer Überblick & Architektur
+##  Technischer Überblick & Architektur
 
 Echiviro wird als native Android-Anwendung mit modernsten Standards entwickelt:
 * **UI-Framework:** Jetpack Compose (vollständig responsiv, OLED-optimierter Dark-Mode)
