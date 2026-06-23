@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- Hauptseite -->
+    <url>
+        <loc>https://testbug90.github.io/Echiviro/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Datenschutz -->
+    <url>
+        <loc>https://testbug90.github.io/Echiviro/datenschutz.html</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Impressum -->
+    <url>
+        <loc>https://testbug90.github.io/Echiviro/impressum.html</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+</urlset>
