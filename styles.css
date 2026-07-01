@@ -249,17 +249,30 @@ p {
 /* Slider-Bildpfade */
 .screen-one {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4)), 
-                      url('Render_Onpager1.jpg');
+                      url('Render_Onepager1.jpg');
 }
 
 .screen-two {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4)), 
-                      url('Render_Onpager2.jpg');
+                      url('Render_Onepager2.jpg');
 }
 
 .screen-three {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4)), 
-                      url('Render_Onpager3.jpg');
+                      url('Render_Onepager3.jpg');
+}
+
+.screen-four {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4)), 
+                      url('Render_Onepager4.jpg');
+}
+.screen-five {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4)), 
+                      url('Render_Onepager5.jpg');
+}
+.screen-six {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4)), 
+                      url('Render_Onepager6.jpg');
 }
 
 /* Editorial Architecture */
